@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="info_card">
+        <h1>Your Information</h1>
+        <p>Name: {{name}}</p>
+        <p>Dojo Location: {{location}}</p>
+        <p>Favorite Language: {{language}}</p>
+        <p>Comment: {{comment}}</p>
+        <form action="/goback">
+            <input type="submit" name="go_back" value="Go Back" id="back">
+        </form>
+    </div>
+</body>
+</html>
